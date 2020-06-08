@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout" columnstretch="3,7">
+    <item row="0" column="1">
+     <widget class="QTableView" name="tableView"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QListView" name="listView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAnalysis">
+    <property name="title">
+     <string>Analysis</string>
+    </property>
+    <addaction name="actionH_II_Section_Analysis"/>
+    <addaction name="separator"/>
+    <addaction name="actionExclude_Extremes"/>
+    <addaction name="actionAuto_Border_Calculation"/>
+    <addaction name="separator"/>
+    <addaction name="actionDisplay_Galaxy_s_Attributes"/>
+    <addaction name="actionCompare"/>
+   </widget>
+   <widget class="QMenu" name="menuSave_Load">
+    <property name="title">
+     <string>Ex-Database</string>
+    </property>
+    <addaction name="actionGet_Ex_Database_via_its_name"/>
+    <addaction name="separator"/>
+    <addaction name="actionImport_Ex_Database_from_AGal_Ex_Database_set_agaldb"/>
+    <addaction name="actionExport_Ex_Database_to_Agal_Ex_Database_set_agaldb"/>
+   </widget>
+   <widget class="QMenu" name="menuSave_Load_2">
+    <property name="title">
+     <string>Import/Export</string>
+    </property>
+    <addaction name="actionSave_Current_Status"/>
+    <addaction name="actionSave_to_AGal_Dataset_agal"/>
+   </widget>
+   <addaction name="menuAnalysis"/>
+   <addaction name="menuSave_Load"/>
+   <addaction name="menuSave_Load_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionH_II_Section_Analysis">
+   <property name="text">
+    <string>Start H II Image Analysis</string>
+   </property>
+  </action>
+  <action name="actionExclude_Extremes">
+   <property name="text">
+    <string>Exclude Extremes</string>
+   </property>
+  </action>
+  <action name="actionSave_Current_Status">
+   <property name="text">
+    <string>Import from AGal Dataset(.agal)</string>
+   </property>
+  </action>
+  <action name="actionSave_to_AGal_Dataset_agal">
+   <property name="text">
+    <string>Export to AGal Dataset(.agal)</string>
+   </property>
+  </action>
+  <action name="actionGet_Ex_Database_via_its_name">
+   <property name="text">
+    <string>Get Ex-Database via its name(WEB)</string>
+   </property>
+  </action>
+  <action name="actionLoad_Ex_Database_from_file">
+   <property name="text">
+    <string>Import Ex-Database via Agal Ex-Database set(.agaldb)</string>
+   </property>
+  </action>
+  <action name="actionImport_Ex_Database_from_AGal_Ex_Database_set_agaldb">
+   <property name="text">
+    <string>Import Ex-Database from AGal Ex-Database set(.agaldb)</string>
+   </property>
+  </action>
+  <action name="actionExport_Ex_Database_to_Agal_Ex_Database_set_agaldb">
+   <property name="text">
+    <string>Export Ex-Database to AGal Ex-Database set(.agaldb)</string>
+   </property>
+  </action>
+  <action name="actionDisplay_Settings">
+   <property name="text">
+    <string>Display Settings</string>
+   </property>
+  </action>
+  <action name="actionClear_All">
+   <property name="text">
+    <string>Clear All</string>
+   </property>
+  </action>
+  <action name="actionAuto_Border_Calculation">
+   <property name="text">
+    <string>Auto-Border Calculation</string>
+   </property>
+  </action>
+  <action name="actionCompare_Galaxies">
+   <property name="text">
+    <string>Compare...</string>
+   </property>
+  </action>
+  <action name="actionDisplay_Galaxy_s_Attributes">
+   <property name="text">
+    <string>Display Galaxy's Attributes</string>
+   </property>
+  </action>
+  <action name="actionCompare">
+   <property name="text">
+    <string>Compare...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
